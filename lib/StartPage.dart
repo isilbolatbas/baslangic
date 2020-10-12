@@ -1,5 +1,6 @@
 import 'package:baslangic/cardpage.dart';
 import 'package:baslangic/jsonData.dart';
+import 'package:baslangic/xmlData.dart';
 import 'package:flutter/material.dart';
 
 
@@ -64,8 +65,9 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
           new cardpage(),
           new doviz(),
+          new xmlData(),
           new Text("This is notification Tab View"),
-          new Text("This is notification Tab View")
+
         ],
         controller: _tabController,),
     );
