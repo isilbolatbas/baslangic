@@ -59,14 +59,14 @@ parsing();
           child: RaisedButton(
             color: const Color(0xFF6A1B9A),
             textColor: Colors.white,
-            child: new Text("Bilinmeyen Json'u Gör"),
+            child: new Text("KUR LİSTELE"),
             onPressed: _fetchData,
           ),
         ),
         body: itemList.length > 0 ? ListView(
             children:  itemList.map((Photo item) {
               return ListTile(
-          
+
                 subtitle: Text(item.forexbuying),
                 trailing: FlatButton(onPressed: (){}, child: Text('\$${item.currencyname}', style: TextStyle(fontSize: 12, color: Colors.red),)),
               );
